@@ -1,3 +1,4 @@
+# Komentar diawali dengan tanda pagar #, Komentar ini tidak akan dijalankan
 # Variable tidak boleh dimulai dengan nomor
 # Variable tidak boleh ada spasi
 # Variable tidak boleh menggunakan simbol
@@ -14,24 +15,24 @@ print(integer)
 float = 1.5
 print(float)
 
+# Di String, List, dan Tuple ada yang namanya index / nomor penempatan Value atau Isi
+# Index diawali dari nomor / angka 0
+# Pada contoh dibawah index 0 berisi angka 1, index 1 berisi "apa" dan seterusnya
+# Index juga bisa dihitung dari belakang dengan cara memberikan nilai minus (-)
+# Jika ingin memunculkan Value atau Isi pada index tertentu maka tinggal panggil seperti ini
+# nama_variable[index]
+
 # String
 string = "halo"
 print(string)
-
-# Boolean hanya berisi True atau False
-bool = True
-print(bool)
-
-# Di List, dan Tuple ada yang namanya index / nomor penempatan Value atau Isi
-# Index diawali dari nomor / angka 0
-# Pada contoh dibawah index 0 berisi angka 1, index 1 berisi "apa" dan seterusnya
-# Jika ingin memunculkan Value atau Isi pada index tertentu maka tinggal panggil seperti ini
-# nama_variable[index]
+print(string[0])
+print(string[-1])
 
 # List ~ Value atau Isi dapat diubah
 list = [1, "apa", 1, "apa"]
 print(list)
-print(list[1])
+print(list[0])
+print(list[-1])
 
 # Tuple ~ Value atau Isi tidak dapat diubah
 tuple = (1, "apa", 1, "apa")
@@ -55,3 +56,7 @@ dict = {
 }
 print(dict)
 print(dict["nama"])
+
+# Boolean hanya berisi True atau False
+bool = True
+print(bool)
